@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Parisienne&display=swap');
+.topnav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 0px;
+    color: white;
+    width: 100%;
+}
+.topnav-icon {
+    align-self: center;
+    color: rgb(243, 78, 169);
+   
+}
+.topnav p {
+    color: white;
+    padding-left: .5rem;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 1rem;
+
+}
+.topnav a {
+    color: white;
+    /* padding: 4px; */
+    margin: 7px;
+    align-self: center;
+}
+.topnav .vl {
+    background-color: white;
+    width: 2px;
+    margin: 7px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.hamburger {
+    background-color: #fff;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: all 0.4s ease;
+}
+.hamburger svg {
+	width: 2.5rem;
+	height: 2.5rem;
+	z-index: 2;
+}
+nav ul {
+	display: none;
+}
+nav.open ul {
+	animation: menu-open 0.7s ease;
+	position: absolute;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 3rem 0;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+nav.open ul li {
+	margin-bottom: 10px;
+	padding-left: 1rem;
+}
+.logo-hamburger-container {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-menu {
+    display: none;
+}
+.logo h1{
+    font-size: 3rem;
+    font-family: 'Finger Paint', cursive;
+    color: black;
+}
+.logo a {
+    text-decoration: none;
+}
+.search input {
+    border: none;
+    width: 200px;
+    padding-bottom: 5px;
+    height: 2rem;
+}
+.search {
+    width: 200px;
+    display: none;
+}
+::placeholder {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+@media screen and (min-width: 595px) {
+    .navbar-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.5rem;
+        transition: all 0.4s ease;
+    }
+    .navbar-icon {
+        padding-left: 1rem;
+        color: black;
+        width: 2rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    .open {
+        display: none;
+    }
+    .search {
+        width: 200px;
+        display: grid;
+        grid-template-columns: 90% 10%;
+        align-items: end;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        border-bottom: 1px solid black;
+    }
+} 
+@media screen and (min-width: 798px) {
+} 
